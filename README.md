@@ -5,6 +5,9 @@ The sample is using [Flask microframework](http://flask.pocoo.org/) and is inten
 
 Deploy to Cloud Foundry
 -----------------------
+```
+pip3 download -r requirements.txt -d vendor
+```
 
 ```
 cf push
