@@ -14,9 +14,12 @@ https://docs.cloudfoundry.org/buildpacks/python/#vendoring
 cf push
 ```
 
-to start emitting logs
+to start emitting logs, call the api, then it will spin up a seperated thread for emitting logs. the more calls, the more logs.
 ```
 curl -k https://this-app-domain/start
+curl -k https://this-app-domain/start
+curl -k https://this-app-domain/start
+
 ```
 
 ```
