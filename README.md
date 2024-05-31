@@ -14,6 +14,16 @@ https://docs.cloudfoundry.org/buildpacks/python/#vendoring
 cf push
 ```
 
+Unlimit app logging
+-----------------------
+
+To quickly allow App1's logging to be unblocked from the limit we could use the cf CLI to scale the log limit: 
+```
+cf scale App1 -l -1
+```
+
+Emitting logs
+-----------------------
 to start emitting logs, call the api, then it will spin up a seperated thread for emitting logs. the more calls, the more logs.
 ```
 curl -k https://this-app-domain/start
