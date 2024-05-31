@@ -19,7 +19,7 @@ to start emitting logs, call the api, then it will spin up a seperated thread fo
 curl -k https://this-app-domain/start
 curl -k https://this-app-domain/start
 curl -k https://this-app-domain/start
-
+...
 ```
 scale out for more logs.
 
@@ -32,4 +32,5 @@ to stop generating logs.
 curl -k https://this-app-domain/stop
 curl -k https://this-app-domain/stop
 curl -k https://this-app-domain/stop
+...
 ```
