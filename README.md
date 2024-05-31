@@ -1,4 +1,4 @@
-Sample Python Web application
+Sample Python Web application for generating logs.
 =============================
 
 The sample is using [Flask microframework](http://flask.pocoo.org/) and is intented to test the Python support on [Pivotal's Cloud Foundry](https://run.pivotal.io/).
@@ -21,7 +21,15 @@ curl -k https://this-app-domain/start
 curl -k https://this-app-domain/start
 
 ```
+scale out for more logs.
 
 ```
+cf scale my-app -i 10
+```
+
+to stop generating logs.
+```
+curl -k https://this-app-domain/stop
+curl -k https://this-app-domain/stop
 curl -k https://this-app-domain/stop
 ```
